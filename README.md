@@ -35,3 +35,53 @@
 ## 课程目标 （与课程考核环节多对多）
 
 
+
+
+## 后台用户管理及权限
+
+### 账号管理路由表
+| 请求方法 | 请求路径     | get或post参数                              | 备注         |
+|----------|--------------|--------------------------------------------|--------------|
+| POST     | /login       | username,password                          | 登录界面     |
+| GET      | /user        |                                            | 渲染用户界面 |
+| GET      | /user/new    |                                            | 渲染增加页面 |
+| POST     | /user/new    | username,password,realname,sex,phone,role  | 增加用户     |
+| GET      | /user/delete | id                                         | 删除用户     |
+| GET      | /user/alter  | id                                         | 渲染修改页面 |
+| POST     | /user/alter  | username,password,realname,sex,phone,limit | 修改用户     |
+
+### 角色管理路由表
+| 请求方法 | 请求路径     | get或post参数                         | 备注         |
+|----------|--------------|---------------------------------------|--------------|
+| GET      | /role        |                                       | 渲染角色界面 |
+| GET      | /role/new    |                                       | 渲染增加页面 |
+| POST     | /role/new    | rolename,description,basicp,opertionp | 增加角色     |
+| GET      | /role/delete | id                                    | 删除角色     |
+| GET      | /role/alter  | id                                    | 渲染修改页面 |
+| POST     | /role/alter  | rolename,description,basicp,opertionp | 修改角色     |
+
+### 权限管理路由表
+| 请求方法 | 请求路径           | get或post参数                     | 备注             |
+|----------|--------------------|-----------------------------------|------------------|
+| GET      | /permission        |                                   | 渲染权限界面     |
+| GET      | /permission/new    |                                   | 渲染增加权限页面 |
+| POST     | /permission/new    | permissionName,description,nature | 增加权限         |
+| GET      | /permission/delete | id                                | 删除权限         |
+| GET      | /permission/alter  | id                                | 渲染权限修改页面 |
+| POST     | /permission/alter  | permissionName,description,nature | 修改角色         |
+
+
+
+
+
+
+
+### 登录页面
+
+### 账号管理
+- 账号列表
+- 增删改
+
+### 角色管理（权限）
+- 角色列表
+- 
