@@ -99,7 +99,8 @@
         color: #333;
         text-align: center;
         line-height: 200px;
-        max-height: 100hv;
+        height: 100vh;
+        border-right: solid 1px #e6e6e6;
     }
 
     .el-main {
